@@ -1,0 +1,56 @@
+    /* Button Css*/
+    .more-button-holder {
+        width: 100%; 
+        text-align: center;
+
+        div {
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 4px;
+            background: $charcoal;
+            margin-top: 1.5em;
+            border: 1px darkgrey solid;
+        }
+        
+        img {
+            width: 1em;
+            display: inline-block;
+            padding-right: 1em;
+            position: relative; 
+            top: .125em;
+            left: 4px;
+        }
+
+        p {
+            display: inline-block;
+            padding:  .5em 0 .5em 1em;;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 300;
+        }
+}
+
+.cred div {
+    margin-top: 2em;
+    background: $green;
+
+    p {
+        font-size: .75em;
+        padding: .375em 0 .375em .625em;
+        color: #fff;
+    }
+
+    img {
+        width: .75em;
+        padding-right: .625em;
+        
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .cred div {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,324 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.allwrap {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 319px;
+    margin: 0 auto;
+    
+}
+
+
+/*Header  Styles*/
+header {
+    height: 3em;
+    background: #fff;
+    -webkit-box-shadow: 0 8px 6px -6px lightgrey;
+    -moz-box-shadow: 0 8px 6px -6px lightgrey;
+    box-shadow: 0 8px 6px -6px lightgrey;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: .5em;
+    overflow: hidden;   
+
+    a {
+        color: #000;
+    }
+}
+.nav-toggle {
+    width: 30px;
+    float: right;
+    position: relative; 
+    top: .5em; 
+    right: .5em;
+}
+header h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: .25em 0 0 .375em;
+    display: inline-block;
+    span {
+        color: $darkgrey;
+    }
+}
+header p {
+    font-size: .6em;
+    padding-left: 1em;
+}
+.large-nav {
+    display: none;
+}
+/*Small Nav Styles*/
+.small-nav {
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    text-align: center;
+}
+.small-nav ul {
+    padding-top: 4em;
+}
+.small-nav ul li {
+    line-height: 2.75em;
+}
+.small-nav a {
+    color: #fff;
+    font-size: 1.625em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/*About Section Styles*/
+section {padding: 1em; overflow: hidden;}
+.about{
+    padding-top: 2em;
+}
+.about .profile-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid $darkgrey;
+    float: right;
+    margin: 0 0 .25em .25em;
+    margin-top: .5em;
+    background-image: url('../images/self-square.jpg');
+    background-size: cover;
+}
+.about p {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+h2 {
+    font-size: 1.25em;
+    font-weight: 300;
+    color: $darkgrey;
+    padding-bottom: .5em
+}
+.about h3{
+    color:$darkgrey;
+    padding: 1.5em 0 .5em 0;
+    font-weight: 300;
+}
+.about a {
+    font-weight: bold;
+    color: $darkgrey;
+}
+/*Skills Section Styles*/
+.skills h2{
+    padding-bottom: 0;
+}
+.skills ul li {
+    padding: .5em 0;
+    display: inline-block;
+    width: 40%;
+}
+
+.skills ul li:nth-child(even) {
+    margin-left: 1em;
+}
+
+.skills ul li p {
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: rgba(0,0,0,.75);
+}
+.skills img {
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: .25em;
+    left: .25em;
+}
+/*Footer Styles*/
+footer {
+    margin-top: 2em;
+    border-top: 1px solid lightgrey;
+}
+footer section {
+    padding-bottom: 4em;
+}
+footer div {
+    padding-bottom: 2em;
+}
+footer .contact-list {
+    padding-top: 1em;
+}
+footer .contact-list li {
+    padding-bottom: .5em;
+}
+footer .social-list li {
+    display: inline-block;
+    padding-right: .25em;
+}
+footer .contact-list img {
+    width: 20px;
+    position: relative; 
+    top: 4px;
+    margin-right: .25em;
+    display: inline-block;
+}
+footer .contact-list p {
+    font-size: 1.125em;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+}
+footer .github {
+    width: 38px;
+}
+footer .instagram {
+    width: 36px;
+}
+footer .linkedin {
+    width: 48px;
+    position: relative; 
+    top: 5px;
+    right: 2px;
+}
+footer .social-list p {
+    font-size: .5em;
+    text-align: center;
+    color: #000;
+}
+footer .copy-bar {
+    width: 100%;
+    padding-bottom: 0;
+}
+footer .copy-bar p {
+    text-align: center;
+    font-size: .5em;
+    color: #000;
+}
+
+/* Phones - Iphone6 & 7(landscape phones, 375px and up)*/
+@media (min-width: 375px) { 
+.skills ul li p {
+font-size: 1.25em;
+}
+}
+
+/* Phones 6s & 7s (landscape phones, 414px and up)*/
+@media (min-width: 414px) { 
+.about .profile-image {
+width: 120px;
+height: 120px;
+}
+.skills ul li p {
+font-size: 1.375em;
+}
+.skills img {
+width: 24px;
+}
+}
+/* (landscape phones, 600px and up)*/
+@media (min-width: 600px) { 
+.skills ul li {
+max-width: 30%;
+}
+.skills ul li:nth-child(even) {
+    margin-left: 0;
+}
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+section {
+max-width: 680px;
+margin: 0 auto;
+}
+.skills ul li {
+width: 24%;	
+}
+footer section {
+display: flex;
+padding-top: 2em;
+}
+footer div {
+display: inline-block;
+width: 50%;
+padding-bottom: 0;
+}
+footer .github {
+    width: 50px;
+}
+footer .instagram {
+width: 46px;
+}
+footer .linkedin {
+width: 62px;
+position: relative; 
+top: 5px;
+right: 2px;
+}
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+.width-contain {
+max-width: 800px;
+margin: 0 auto;
+}
+header h1,
+header p {
+padding-left: 0;
+}
+
+section {
+max-width: 800px;
+}
+.about .profile-image {
+width: 140px;
+height: 140px;
+}
+.about p:last-of-type {
+max-width: 760px;
+}
+.nav-toggle {
+display: none;
+}
+.small-nav {
+display: none !important;
+}
+.large-nav {
+display: block;
+float: right;
+padding: .5em 0 0 0;
+} 
+.large-nav li {
+display: inline-block;
+padding: .5em;
+    a {
+        color: black;
+    }
+
+    a.active-page {
+        background: $darkgrey;
+        padding: .25em .5em;
+        color: #fff;
+        border-radius: 4px;
+    }
+}
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+section {
+max-width: 900px;
+}
+.width-contain {
+max-width: 900px;
+}
+}

@@ -1,0 +1,129 @@
+.school-panel {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,.2);
+    margin-top: 2em;
+    overflow: hidden;
+}
+.treehouse {
+    margin-top: 0;
+}
+.school-title-holder {
+    color: #fff;
+    padding: .75em;
+}
+.school-title-holder img {
+    width: 40px;
+    float: right;
+}
+.school-title-holder .school-name {
+    font-size: 1.5em;
+    padding-bottom: .25em;
+    font-weight: 300;
+}
+.school-title-holder .program {
+    padding-bottom: .25em;
+    font-weight: 300;
+}
+.treehouse .school-title-holder {
+    background: $green;
+}
+
+.treehouse .team-treehouse {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.treehouse .btn-holder {
+    width: 100%; 
+    text-align: center;
+    padding-bottom: 3px;
+}
+.treehouse button {
+    background: lightgrey;
+}
+.pcc .school-title-holder {
+    background: $blue;
+
+    img {
+        width: 48px;
+    }
+}
+.content-holder {
+    padding: 1em;
+    margin: 0 auto;
+}
+.content-holder p {
+    line-height: 1.25em;
+    padding-bottom: 1em;
+}
+.content-holder ul {
+    line-height: 1.5em;
+    padding-left: .5em;
+}
+.school-panel-control {
+    text-align: center;
+}
+.treehouse .school-panel-control {
+    background: $green;
+}
+.pcc .school-panel-control {
+    background: $blue;
+}
+.school-panel-control img {
+    width: 30px;
+}
+.school-panel-control .arrow-icon2 {
+    display: none;
+}
+.hidden-content {
+    display: none;
+    padding: 0  0 2em 1em;
+}
+.hidden-list {
+    display: none;
+}
+.pcc .honor {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding: 1em 0;
+}
+.pcc .honor:last-of-type {
+    border-bottom: none;
+}
+.pcc .honor-title {
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+@media (min-width: 768px) {
+
+    .hidden-content {
+        display: block !important;
+        padding: 0  0 2em 1em;
+        box-sizing: border-box;
+        width: 50%;
+        float: right;
+    }
+    .hidden-list {
+        display: inline-block !important;
+    }
+    .content-holder {
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+        border-right: 1px solid lightgrey;
+    }
+    .treehouse .team-treehouse {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+    .training .arrow-icon1,
+    .training .arrow-icon2 {
+        visibility: hidden;
+    }
+    
+}

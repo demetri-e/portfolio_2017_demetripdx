@@ -1,0 +1,85 @@
+.resume {
+    margin-top: 2em;
+    font-weight: 300;
+    .top-sec {
+        padding-top: 0;
+        padding-bottom:0;
+    }
+
+    section {
+        padding-bottom: 0;
+        padding-top: .75em;
+        max-width: 800px;
+    }
+
+    .bread-crumb {
+        background: transparent;
+        color: $darkgrey;
+        font-size: 1.25em;
+        margin-bottom: .25em;
+        padding-left: 0;
+    }
+    .full-name {
+       font-size: 1.625em;
+       font-weight: 300;
+    }
+
+    h2 {
+        font-size: 1.25em;
+        background: $charcoal;
+        padding-top: .25em;
+        padding-left: .25em;
+        padding-bottom: .25em;
+        color: #fff;
+    }
+    .section-header {
+        padding: 0 0 1em 0;
+    }
+
+    ul {
+        padding: .25em 0 .25em .5em;
+        list-style-type: disc;
+
+    }
+    ul li {
+        padding-bottom: .375em;
+        line-height: 18px;
+        font-size: .875em;
+    }
+
+    h3 {
+        font-size: 1.125em;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    h3.position {
+        font-size: 1em;
+    }
+    h3 span {
+        font-weight: 300;
+    }
+    h4 {
+        font-size: 1em;
+        font-weight: 400;
+        span {
+            font-size: .75em;
+            font-style: italic;
+        }
+    }
+    .sub-heading {
+        margin-top: .25em;
+    }
+    .dev-exp {
+        padding-top: .25em;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .education h2 {
+        margin-bottom: .5em;
+    }
+}
+@media (min-width: 560px) {
+  .resume  ul {
+        padding-left: 1em;
+    }
+}

@@ -1,0 +1,121 @@
+.team-treehouse {
+  overflow: hidden;
+}
+  h2.points-earned {
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: rgba(0,0,0,.85);
+  }
+  .total {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  .pie {
+    height: 10em;
+    width: 10em;
+    position: relative;
+    margin: 0 auto;
+  }
+  .pie::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 5em;
+    height: 5em;
+    background: #fff;
+    border-radius: 50%;
+    top: 2.5em;
+    left: 2.5em;
+  }
+  .slice {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    clip: rect(0px, 10em, 10em, 5em);
+    animation: bake-pie 1s;
+  }
+  .slice span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    clip: rect(0px, 10em, 10em, 5em);
+  }
+  .legend {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: left;
+  }
+  .legend ul {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: 0.625em;
+  }
+  .legend li {
+    height: 1.25em;
+    margin-bottom: 0.7em;
+    padding-left: 0.375em;
+    padding-right: 1em;
+    border-left: 1.25em solid black;
+    display: inline-block;
+  }
+  .legend em {
+    font-style: normal;
+    font-size: 12px;
+  }
+  .legend span {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+
+    .legend { 
+      padding-left: 2em;
+    }
+
+    /* Large Pie */
+    .pie {
+      height: 12.5em;
+      width: 12.5em;
+      position: relative;
+      margin: 0 auto;
+    }
+    .pie::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 6.25em;
+      height: 6.25em;
+      background: #fff;
+      border-radius: 50%;
+      top: 3em;
+      left: 3em;
+    }
+    .slice {
+      position: absolute;
+      width: 12.5em;
+      height: 12.5em;
+      clip: rect(0px, 12.5em, 12.5em, 6.25em);
+      animation: bake-pie 1s;
+    }
+    .slice span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: black;
+      width: 12.5em;
+      height: 12.5em;
+      border-radius: 50%;
+      clip: rect(0px, 12.5em, 12.5em, 6.25em);
+    }
+
+  }
